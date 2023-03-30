@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("imagens/fundo_game.png") ;
+    backdrop-filter: url(filters.svg#filter) blur(8px) saturate(100%);
+}
+
+/*Game*/
+.logo {
+    width: 35%;
+    margin: 1%;
+    max-width: 250px;
+    align-items: center;
+}
+
+.telaInicial{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: center;    
+    background-color:#E2E2E5;
+    background-position: center;
+    min-height: 76vh;
+    max-width: 76vh;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+.telaInicial h1{
+    font-family: 'Fredoka One', cursive;
+    color:#FE7903;
+    margin: 7rem 6rem  2rem;
+    font-size: 2rem;
+}
+
+.telaInicial p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 12rem;
+    background: #71BC06;
+    cursor: pointer;
+    color: #1c3106;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 0 0 #71BC06;
+    transition: all 0.3s ease;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background: #498A0C;
+	color: #b2d88c;
+	border: 1px solid #A4D96F;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #A4D96F;
+	text-shadow: none;
+}
+
+.p1{
+    display: none;
+    padding: 1rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* min-height: 80vh;   */
+    position: relative;
+}   
+
+img{
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .p1 talvez precise ser adicinado antes da classe abaixo */
+.btnSN{
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 17px 29px;
+    text-align: center;
+    background: #71BC06;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnSN.btnS{
+    left: 50%;
+}
+
+.btnSN.btnN{
+    left: 65%;
+    background: #FE7903
+}
+
+.btnSN.btnS:hover{
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px #A4D96F;
+}
+
+.btnSN.btnN:hover{
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px #a15b0a;
+}
+
+.botoes-controle {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao {
+    width: 20%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+}
+
+#quiz{
+    background: #FE7903;
+}
+
+footer{
+    background-color: #A4D96F;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.textfooter{
+    color: #008000;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 1200px) {
+    .telaInicial{
+       min-height: 76vh;
+    }
+
+    .logo{
+        width: 35%;
+    }
+
+    .telaInicial h1{
+        margin:2rem;
+    }
+
+    .botao {
+        width: 30%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        width: 55%;
+    }
+}

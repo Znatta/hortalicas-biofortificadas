@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleQuiz.css">
+    <script defer src="quiz.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <title>Quiz - Horta Virtual</title>
+</head>
+
+<body>
+    <header class="game" id="teste">
+        <a href="/Home/index.html"><img class="logo" src="imagens/logo.png"> </a>
+    </header>
+    
+    <main>
+        <div class="containerGame">
+            <div class="container">
+                <br>
+                <div class="p1" id="tela1">
+                    <img src="imagens/bg_quiz.png" alt="">
+                    <p>Sendo uma Alface Biofortificada, podemos dizer que sou uma:
+                    </p>
+                    <button class="btnQst btnA" onclick="resposta1('A')" id="a1">Hortaliça</button>
+                    <button class="btnQst btnB" onclick="resposta1('B')" id="b1">Fruta</button>
+                    <button class="btnQst btnC" onclick="resposta1('C')" id="c1">Raiz</button>
+                    <span id="quest1"></span>
+                </div>
+                <div class="botoes-controle" id="controles1">
+                    <div class="botao"><button class="btn" onclick="proximaTela(2)">Próxima</button></div>
+                </div>
+
+                <div class="p1" id="tela2">
+                    <img src="imagens/bg_quiz.png" alt="">
+                    <p>O que eu tenho de diferente das alfaces comuns?</p>
+                    <button class="btnQst btnA" onclick="resposta2('A')" id="a2">Energia</button>
+                    <button class="btnQst btnB" onclick="resposta2('B')" id="b2">Água</button>
+                    <button class="btnQst btnC" onclick="resposta2('C')" id="c2">Nutrientes</button>
+                    <span id="quest2"></span>
+                </div>
+                <div class="botoes-controle" id="controles2">
+                    <div class="botao"><button class="btn" onclick="telaAnterior(1)">Anterior</button></div>
+                    <div class="botao"><button class="btn" onclick="proximaTela(3)">Próxima</button></div>
+                </div>
+
+                <div class="p1" id="tela3">
+                    <img src="imagens/bg_quiz.png" alt="">
+                    <p>Os nutrientes da alface biofortificada podem ajudar a:</p>
+                    <button class="btnQst btnA" onclick="resposta3('A')" id="a3">Emagrecer</button>
+                    <button class="btnQst btnB" onclick="resposta3('B')" id="b3">Evitar doenças</button>
+                    <span id="quest3"></span>
+                </div>
+                <div class="botoes-controle" id="controles3">
+                    <div class="botao"><button class="btn" onclick="telaAnterior(2)">Anterior</button></div>
+                    <div class="botao"><button class="btn" onclick="proximaTela(4)">Próxima</button></div>
+                </div>
+
+                <div class="p1" id="tela4">
+                    <img src="imagens/bg_quiz.png" alt="">
+                    <p>As alfaces biofortificadas produzem flor?</p>
+                    <button class="btnQst btnA" onclick="resposta4('A')" id="a4">Sim</button>
+                    <button class="btnQst btnB" onclick="resposta4('B')" id="b4">Não</button>
+                    <span id="quest4"></span>
+                </div>
+                <div class="botoes-controle" id="controles4">
+                    <div class="botao"><button class="btn" onclick="telaAnterior(3)">Anterior</button></div>
+                    <div class="botao"><button class="btn" onclick="proximaTela(5)">Próxima</button></div>
+                </div>
+
+                <div class="p1" id="tela5">
+                    <img src="imagens/bg_quiz.png" alt="">
+                    <p>Quais das fotos a alface está pendoando?</p>
+                    <button class="btnQst btnA" onclick="resposta5('A')" id="a5">IMAGEM 1</button>
+                    <button class="btnQst btnB" onclick="resposta5('B')" id="b5">IMAGEM 2</button>
+                    <button class="btnQst btnC" onclick="resposta5('C')" id="c5">IMAGEM 3</button>
+                    <span id="quest5"></span>
+                </div>
+                <div class="botoes-controle" id="controles5">
+                    <div class="botao"><button class="btn" onclick="telaAnterior(4)">Anterior</button></div>
+                    <div class="botao"><button class="btn" onclick="proximaTela(6)">Próxima</button></div>
+                </div>
+
+                <div class="p1" id="tela6">
+                    <img src="imagens/bg_quiz.png" alt="">
+                    <p>A Alface Biofortificada se desenvolve muito rápido. Em quantos dias aproximadamente
+                        ela já está pronta para ser colhida do solo?
+                    </p>
+                    <button class="btnQst btnA" onclick="resposta6('A')" id="a6">5 dias</button>
+                    <button class="btnQst btnB" onclick="resposta6('B')" id="b6">30 dias</button>
+                    <button class="btnQst btnC" onclick="resposta6('C')" id="c6">100 dias</button>
+                    <span id="quest6"></span>
+                </div>
+                <div class="botoes-controle" id="controles6">
+                    <div class="botao"><button class="btn" onclick="telaAnterior(5)">Anterior</button></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </main>
+
+    <footer>
+        <br>
+        <a>Jogo desenvolvido pela equipe <b>UFU®</b>.</a>
+        <br><br>
+    </footer>
+</body>
+</html>

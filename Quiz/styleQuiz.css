@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("imagens/fundo_game.png") ;
+    backdrop-filter: url(filters.svg#filter) blur(8px) saturate(100%);
+}
+
+.logo {
+    width: 35%;
+    margin: 1%;
+    max-width: 250px;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 12rem;
+    background: #ff7700;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border: 1px solid #498A0C;
+    border-radius: 35px;
+    box-shadow: 0 0 0 #71BC06;
+    transition: all 0.3s ease;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background: #498A0C;
+	color: #b2d88c;
+	border: 1px solid #A4D96F;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #A4D96F;
+	text-shadow: none;
+}
+
+.p1{
+    display: none;
+    padding: 1rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}   
+
+img{
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .p1 talvez precise ser adicinado antes da classe abaixo */
+.btnQst{
+    display: block;
+    position: absolute;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 8px ;
+    text-align: center;
+    background: #70bc0681;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    border: 0.5px solid #71BC06;
+    border-radius: 10px;
+    margin: 10px;
+    width: 20vw;
+}
+
+.btnQst.btnA{
+    top: 40%;
+}
+
+.btnQst.btnB{
+    top: 51%;
+}
+
+.btnQst.btnC{
+    top: 62%;
+}
+
+.btnQst.btnD{
+    top: 73%;
+}
+
+.btnQst.btnA:hover,
+.btnQst.btnB:hover,
+.btnQst.btnC:hover,
+.btnQst.btnD:hover{
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px #70bc06;
+}
+
+p{
+    display: block;
+    position: absolute;
+    color: #000000;
+    left: 42%;
+    top: 15%;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 3px;
+    width: 35vw;
+}
+
+span{
+    display: block;
+    position: absolute;
+    color: #ff7700;
+    left: 42%;
+    top:74%;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 3px;
+    width: 30vw;
+}
+
+.botoes-controle {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao {
+    width: 20%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+}
+
+footer{
+    background-color: #A4D96F;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.textfooter{
+    color: green;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo{
+        width: 35%;
+    }
+
+    .botao {
+        width: 30%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        width: 55%;
+    }
+}
