@@ -907,17 +907,18 @@ footer p{
     .cabecalho {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        
         padding: 0px;
         margin-bottom: 2rem;
-        padding-right: 1.5rem;
+        padding-right: 0rem;
     }
       
     .cabecalho-imagem {
         padding-top: 1rem;
         width: 120%;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
       
     a{
@@ -929,18 +930,21 @@ footer p{
         background-color: #A4D96F;
         border-radius: 25px 5px;
         padding: 0.3rem 0.2rem;
-        margin: 15px;
+        margin: 20px;
         display: flex;
         flex-direction: row;
-        
+    }
+
+    .cabecalho-menu nav{
+        padding-left: 10rem;
     }
       
     .cabecalho-menu-item {
         font-family: 'Sarala', sans-serif;
         color: #498A0C;
-        font-weight: 200;
+        font-weight: 100;
         font-size: 12px;
-        padding: 0rem 1rem;
+        padding: 0rem 0.5rem;
         
         transition: all 0.7s;
     }
@@ -953,7 +957,7 @@ footer p{
       }
       
     .escrito{
-        width: 10%;
+        width: 5%;
         display: flex;
         flex-direction: column;
         gap: 0px;  
@@ -965,7 +969,7 @@ footer p{
         max-height: 120px;
         padding: 0rem;
         margin: 0rem;
-        margin-left: 70px;
+        margin-left: 120px;
     }
     
     .home p{
@@ -973,7 +977,7 @@ footer p{
         margin-top: 3rem;
         margin: 0;
         /* margin-left: 5rem; */
-        padding-left: 7.5rem;
+        padding-left: 6rem;
         /* width: 100px; */
         text-align: center;
         float: right;
@@ -985,7 +989,7 @@ footer p{
         width: 150px;
         height: 40px;
         margin-top: 2rem;
-        margin-left: 9rem;
+        margin-left: 6rem;
         border: none;
         box-shadow: 4px 5px 4px #2d5a03;
         border-radius: 20px;
@@ -1008,51 +1012,62 @@ footer p{
     }
 
     .sobre{
+        margin: 0px;
         padding: 0rem;
         margin-left: 0rem;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .sobre img{
-        padding-top: 7rem;
-        width: 50%;
-        height: 50%;
-        float: left;
+        padding-top: 1rem;
+        /* width: 70%;
+        height: 50%; */
+        width: 40%;
+        height: auto;
+        align-items: center;
         /* margin: 10px; */
+        position: relative;
     }
     
     .sobre h1{
         padding-top: 1rem;
         font-family: Blubblegum;
         color: #ff4500;
-        font-size: 59px;
+        font-size: 40px;
         width: fit-content;
-        text-align: center;
-        margin-left: 3rem;
-        margin-bottom: 1rem;
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 0;
     }
     
     .sobre p{
+        padding-top: 0;
+        margin: 5px;
         width: 100%;
-        font-size: 17px;
+        font-size: 15px;
     }
-    
+
     .primeiro{
+        flex-direction: row;
+        justify-content: center;
         display: flex;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 20px;
-        text-align: justify;
-        padding-right: 1rem;
+        /* text-align: justify; */
+        text-align: center;
     }
     
     .segundo{
-        padding-top: 1rem;
+        text-align: center;
+        /* padding-top: 1rem; */
         display: flex;
         position: relative;
         width: 100%;
         /* margin: auto; */
         align-items: center;
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
     }
 
     .balao{
@@ -1061,20 +1076,27 @@ footer p{
         border-radius: 58px 5px;
         box-shadow: 0px 21px 25px 0px #6a9c69c7;
         
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         
-        margin: 1rem;
+        margin: 0.5rem;
         max-width: 500px ;
         min-width: 100px;
 
         max-height: 500px;
-        min-height: 150px;
+        min-height: 150px; */
+
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+
+        display: flex;
+        width: 75%;
         
-        padding: 2rem;
-        margin-left: 4rem;
+        padding: 0rem;
+        margin-left: 2.5rem;
     }
 
     .dados{
@@ -1082,22 +1104,32 @@ footer p{
         flex-direction: column;
         align-items: center;
         font-size: 10px;
-        padding-left: 4rem;
+        position: relative;
+        padding-left: 7rem;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 
     .dados h1{
         margin-bottom: 0;
-        padding-top: 6rem;
+        padding-top: 2rem;
         font-family: Blubblegum;
         color: #E82E38;
-        font-size: 50px;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .Contato {
+        margin: 0;
+        padding: 0;
+        width: 90%;
     }
 
     .Contato p{
         color: #7D4045;
-        font-size: 16px;
+        font-size: 15px;
         /* padding: 0.5rem; */
         margin-bottom: 1rem;
         width: 100%;
@@ -1106,12 +1138,13 @@ footer p{
     }
 
     .Contato img{
-        width: 250%;
-        margin-bottom: 1.5rem;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
     .Contato .gmap_canvas{
-        width: 140%;
+        width: 110%;
+        border-radius: 10px;
         padding-bottom: 6rem;
     }
 
@@ -1161,8 +1194,8 @@ footer p{
         color: #fff;
         text-align: center;
         margin-top: 1px;
-        margin-bottom: 10px;
-        font-size: 1rem;
+        margin-bottom: 5px;
+        font-size: 10px;
     }
 }
 
