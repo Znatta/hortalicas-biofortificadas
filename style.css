@@ -177,10 +177,13 @@ header {
     border-radius: 58px 5px;
     box-shadow: 0px 21px 25px 0px #6a9c69c7;
     
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     margin: 1rem;
     width: 75vw;
@@ -190,8 +193,7 @@ header {
     max-height: 500px;
     min-height: 150px;
     padding: 2rem;
-    margin-left: 35rem;
-
+    margin-left: 45rem;
 }
 
 .dados{
@@ -204,7 +206,8 @@ header {
 
 }
 .dados h1{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-family: Blubblegum;
     color: #E82E38;
 
@@ -222,6 +225,11 @@ header {
     margin-bottom: 1rem;
 }
 
+.Contato .gmap_canvas{
+    width: 170%;
+    border-radius: 10px;
+    padding-bottom: 6rem;
+}
 
 
 
@@ -941,8 +949,8 @@ footer p{
       
     .cabecalho-menu-item {
         font-family: 'Sarala', sans-serif;
-        color: #498A0C;
-        font-weight: 100;
+        color: #70885a;
+        /* font-weight: bold; */
         font-size: 12px;
         padding: 0rem 0.5rem;
         
@@ -996,7 +1004,7 @@ footer p{
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
         font-size: 20px;
-        color: #ffffffa2 ;
+        color: #ffffff ;
         text-decoration: none;
         transition: all 0.5s;
     }
