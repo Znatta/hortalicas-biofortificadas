@@ -57,7 +57,7 @@ body{
     width: 12rem;
     background: #71BC06;
     cursor: pointer;
-    color: #1c3106;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 300;
     border: none;
@@ -158,21 +158,28 @@ footer{
 }
 
 /*Responsividade*/
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .telaInicial{
        min-height: 76vh;
+       /* margin: 10px; */
     }
 
     .logo{
-        width: 35%;
+        width: 100%;
     }
 
     .telaInicial h1{
         margin:2rem;
     }
 
+    img{
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .botao {
-        width: 30%;
+        width: 20%;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
@@ -180,8 +187,68 @@ footer{
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
     .logo{
-        width: 55%;
+        width: 100%;
+    }
+
+    .botao {
+        width: 30%;
+    }
+
+    .btn{
+        width: 10rem;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    .btnSN{
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+
+    .btnSN.btnN{
+        left: 75%;
     }
 }
+
+
+@media screen and (max-width: 576px) {
+    .btnSN{
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+
+    .btnSN.btnN{
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .btnSN{
+        padding: 6px 20px;
+        font-size: 1rem;
+    }
+
+    .btnSN.btnN{
+        left: 73%;
+    }
+
+    .botao {
+        width: 40%;
+        padding-left: 1rem;
+    }
+
+    .btn{
+        width: 6rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    img{
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
