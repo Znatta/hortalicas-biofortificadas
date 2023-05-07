@@ -23,18 +23,20 @@
     <main>
         <div class="containerGame">
             <div class="container">
-                <div class="telaInicial" id="telaInicial">
+                <div class="telaInicial" id="tela0">
                     <br><br><br>
                     <h1>Bem-vindo</h1>
                     <p>Você está prestes a entrar em uma história muito divertida sobre a alface biofortificada.</p>
                     <br><br><br><br><br>
-                    <button class="btn" onclick="proximaTela(1)">Começar</button>
+                    <div id="controle0">
+                        <button class="btn" onclick="proximaTela(1)">Começar</button>
+                    </div>
                 </div>
                 
                 <div class="p1" id="tela1">
                     <img src="imagens/cenas/1.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c1">
+                <div class="botoes-controle" id="controle1">
                     <div class="botao"><button class="btn" onclick="telaAnterior(0)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(2)">Próximo</button></div>
                 </div>
@@ -42,7 +44,7 @@
                 <div class="p1" id="tela2">
                     <img src="imagens/cenas/2.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c2">
+                <div class="botoes-controle" id="controle2">
                     <div class="botao"><button class="btn" onclick="telaAnterior(1)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(3)">Próximo</button></div>
                 </div>
@@ -50,17 +52,17 @@
                 <div class="p1" id="tela3">
                     <img src="imagens/cenas/3.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c3">
+                <div class="botoes-controle" id="controle3">
                     <div class="botao"><button class="btn" onclick="telaAnterior(2)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(4)">Próximo</button></div>
                 </div>
 
                 <div class="p1" id="tela4">
                     <img src="imagens/cenas/4.png" alt="">
-                    <button class="btnSN btnS" onclick="proximaTela('S')">SIM</button>
-                    <button class="btnSN btnN" onclick="proximaTela(5)">NÃO</button>
+                    <button class="btnSN btnS" onclick="proximaTela(null)">Sim</button>
+                    <button class="btnSN btnN" onclick="proximaTela(5)">Não</button>
                 </div>
-                <div class="botoes-controle" id="c4">
+                <div class="botoes-controle" id="controle4">
                     <div class="botao"><button class="btn" onclick="telaAnterior(3)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(5)">Próximo</button></div>
                 </div>
@@ -68,7 +70,7 @@
                 <div class="p1" id="tela5">
                     <img src="imagens/cenas/5.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c5">
+                <div class="botoes-controle" id="controle5">
                     <div class="botao"><button class="btn" onclick="telaAnterior(4)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(6)">Próximo</button></div>
                 </div>
@@ -76,7 +78,7 @@
                 <div class="p1" id="tela6">
                     <img src="imagens/cenas/6.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c6">
+                <div class="botoes-controle" id="controle6">
                     <div class="botao"><button class="btn" onclick="telaAnterior(5)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(7)">Próximo</button></div>
                 </div>
@@ -84,7 +86,7 @@
                 <div class="p1" id="tela7">
                     <img src="imagens/cenas/7.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c7">
+                <div class="botoes-controle" id="controle7">
                     <div class="botao"><button class="btn" onclick="telaAnterior(6)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(8)">Próximo</button></div>
                 </div>
@@ -92,7 +94,7 @@
                 <div class="p1" id="tela8">
                     <img src="imagens/cenas/8.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c8">
+                <div class="botoes-controle" id="controle8">
                     <div class="botao"><button class="btn" onclick="telaAnterior(7)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(9)">Próximo</button></div>
                 </div>
@@ -100,7 +102,7 @@
                 <div class="p1" id="tela9">
                     <img src="imagens/cenas/9.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c9">
+                <div class="botoes-controle" id="controle9">
                     <div class="botao"><button class="btn" onclick="telaAnterior(8)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(10)">Próximo</button></div>
                 </div>
@@ -108,7 +110,7 @@
                 <div class="p1" id="tela10">
                     <img src="imagens/cenas/10.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c10">
+                <div class="botoes-controle" id="controle10">
                     <div class="botao"><button class="btn" onclick="telaAnterior(9)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(11)">Próximo</button></div>
                 </div>
@@ -116,7 +118,7 @@
                 <div class="p1" id="tela11">
                     <img src="imagens/cenas/11.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c11">
+                <div class="botoes-controle" id="controle11">
                     <div class="botao"><button class="btn" onclick="telaAnterior(10)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(12)">Próximo</button></div>
                 </div>
@@ -124,7 +126,7 @@
                 <div class="p1" id="tela12">
                     <img src="imagens/cenas/12.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c12">
+                <div class="botoes-controle" id="controle12">
                     <div class="botao"><button class="btn" onclick="telaAnterior(11)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(13)">Próximo</button></div>
                 </div>
@@ -132,7 +134,7 @@
                 <div class="p1" id="tela13">
                     <img src="imagens/cenas/13.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c13">
+                <div class="botoes-controle" id="controle13">
                     <div class="botao"><button class="btn" onclick="telaAnterior(12)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(14)">Próximo</button></div>
                 </div>
@@ -140,7 +142,7 @@
                 <div class="p1" id="tela14">
                     <img src="imagens/cenas/14.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c14">
+                <div class="botoes-controle" id="controle14">
                     <div class="botao"><button class="btn" onclick="telaAnterior(13)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(15)">Próximo</button></div>
                 </div>
@@ -148,7 +150,7 @@
                 <div class="p1" id="tela15">
                     <img src="imagens/cenas/15.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c15">
+                <div class="botoes-controle" id="controle15">
                     <div class="botao"><button class="btn" onclick="telaAnterior(14)">Anterior</button></div>
                     <div class="botao"><button class="btn" onclick="proximaTela(16)">Próximo</button></div>
                 </div>
@@ -156,7 +158,7 @@
                 <div class="p1" id="tela16">
                     <img src="imagens/cenas/16.png" alt="">
                 </div>
-                <div class="botoes-controle" id="c16">
+                <div class="botoes-controle" id="controle16">
                     <div class="botao"><button class="btn" onclick="telaAnterior(15)">Anterior</button></div>
                     <div class="botao"><button class="btn" id="quiz" onclick="location.href = 'quiz.html';">Iniciar Quiz</button></div>
                 </div>

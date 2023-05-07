@@ -3,22 +3,6 @@ window.addEventListener("load",function(){
     document.getElementById("controles1").style.display = ("flex");
 });
 
-//Telas
-const tela1 = document.getElementById("tela1");
-const tela2 = document.getElementById("tela2");
-const tela3 = document.getElementById("tela3");
-const tela4 = document.getElementById("tela4");
-const tela5 = document.getElementById("tela5");
-const tela6 = document.getElementById("tela6");
-
-//Botões de controle (proximo/anterior)
-const c1 = document.getElementById("controles1");
-const c2 = document.getElementById("controles2");
-const c3 = document.getElementById("controles3");
-const c4 = document.getElementById("controles4");
-const c5 = document.getElementById("controles5");
-const c6 = document.getElementById("controles6");
-
 //Questão 1
 const btn1A = document.getElementById("a1");
 const btn1B = document.getElementById("b1");
@@ -54,75 +38,20 @@ const btn6C = document.getElementById("c6");
 const span6 = document.getElementById("quest6");
 
 //Funções de troca de tela
-function telaAnterior(tela){
-    switch(tela){
-        case 1:
-            tela1.style.display = ("flex");
-            tela2.style.display = ("none");
-            c1.style.display = ("flex");
-            c2.style.display = ("none");
-            break;
-        case 2:
-            tela2.style.display = ("flex");
-            tela3.style.display = ("none");
-            c2.style.display = ("flex");
-            c3.style.display = ("none");
-            break;
-        case 3:
-            tela3.style.display = ("flex");
-            tela4.style.display = ("none");
-            c3.style.display = ("flex");
-            c4.style.display = ("none");
-            break;
-        case 4:
-            tela4.style.display = ("flex");
-            tela5.style.display = ("none");
-            c4.style.display = ("flex");
-            c5.style.display = ("none");
-            break;
-        case 5:
-            tela5.style.display = ("flex");
-            tela6.style.display = ("none");
-            c5.style.display = ("flex");
-            c6.style.display = ("none");
-            break;
-    }
+function telaAnterior(numTela){
+    document.getElementById("tela" + numTela).style.display = ("flex");
+    document.getElementById("tela" + (numTela + 1)).style.display = ("none");
+    document.getElementById("controles" + numTela).style.display = ("flex");
+    document.getElementById("controles" + (numTela + 1)).style.display = ("none");
 }
 
-function proximaTela(tela){
-    switch(tela){
-        case 2:
-            tela1.style.display = ("none");
-            tela2.style.display = ("flex");
-            c1.style.display = ("none");
-            c2.style.display = ("flex");
-            break;
-        case 3:
-            tela2.style.display = ("none");
-            tela3.style.display = ("flex");
-            c2.style.display = ("none");
-            c3.style.display = ("flex");
-            break;
-        case 4:
-            tela3.style.display = ("none");
-            tela4.style.display = ("flex");
-            c3.style.display = ("none");
-            c4.style.display = ("flex");
-            break;
-        case 5:
-            tela4.style.display = ("none");
-            tela5.style.display = ("flex");
-            c4.style.display = ("none");
-            c5.style.display = ("flex");
-            break;
-        case 6:
-            tela5.style.display = ("none");
-            tela6.style.display = ("flex");
-            c5.style.display = ("none");
-            c6.style.display = ("flex");
-            break;
-    }
+function proximaTela(numTela){
+    document.getElementById("tela" + (numTela-1)).style.display = ("none");
+    document.getElementById("tela" + (numTela)).style.display = ("flex");
+    document.getElementById("controles" + (numTela-1)).style.display = ("none");
+    document.getElementById("controles" + (numTela)).style.display = ("flex");
 }
+
 
 //Funções de verificação de resposta por questão
 //Questão 1
@@ -161,7 +90,7 @@ function resposta2 (alternativa){
             btn2C.style.background = ("#71BC06");
             btn2C.style.border = ("2px solid green");
             btn2B.style.background = ("#ff00008e");
-            span1.textContent = ("INCORRETO!");
+            span2.textContent = ("INCORRETO!");
             break;
         case 'C':
             btn2C.style.background = ("#71BC06");
@@ -236,7 +165,8 @@ function resposta6 (alternativa){
         case 'C':
             btn6B.style.background = ("#71BC06");
             btn6B.style.border = ("2px solid green");
-            span6.textContent = ("CORRETO!");
+            btn6C.style.background = ("#ff00008e");
+            span6.textContent = ("INCORRETO!");
             break;
     }
 }
